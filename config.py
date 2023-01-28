@@ -1,8 +1,6 @@
-import os
+from os import getenv
 
+API_ID = int(getenv("API_ID", "")) 
+API_HASH = getenv("API_HASH", "") 
 
-API_ID = '' # YOUR TELEGRAM API_ID INSIDE ''
-
-API_HASH = "" # YOUR TELEGRAM API_HASH INSIDE ""
-
-BOT_TOKEN = "" # BOT TOKEN INSIDE ""
+BOT_TOKEN = getenv("BOT_TOKEN", "")
