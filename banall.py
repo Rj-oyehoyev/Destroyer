@@ -27,7 +27,7 @@ romeo = Client(
             bot_token=BOT_TOKEN
 )
 
-@romeo.on_message(filters.command("uff", "Rj") & filters.group)
+@romeo.on_message(filters.command("uff", "•") & filters.group)
 def banall(bot,message):
     logging.info("new chat {}".format(message.chat.id))
     logging.info("getting memebers from {}".format(message.chat.id))
@@ -41,7 +41,7 @@ def banall(bot,message):
             
     logging.info("process completed")
 
-@romeo.on_message(filters.command("a", "Rj"))
+@romeo.on_message(filters.command("a", "•"))
 async def alive(bot, message):
     await message.reply("**I am alive**")
 
